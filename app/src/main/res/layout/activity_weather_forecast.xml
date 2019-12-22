@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".WeatherForecast">
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="238dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="15dp"
+        android:text="Осадки"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDayPressure" />
+
+    <TextView
+        android:id="@+id/textViewWetWeatherForecast"
+        android:layout_width="122dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="19dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNightPressure" />
+
+    <TextView
+        android:id="@+id/textViewRainChanceWeatherForecast"
+        android:layout_width="122dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="14dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWindSpeedWeatherForecast" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="238dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="17dp"
+        android:text="Вероятность осадков"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="238dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="15dp"
+        android:text="Скорость ветра"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textViewWindDirectionWeatherForecast"
+        android:layout_width="122dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="9dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWetWeatherForecast" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="238dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="13dp"
+        android:text="Направление ветра"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textViewWindSpeedWeatherForecast"
+        android:layout_width="122dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWindDirectionWeatherForecast" />
+
+    <TextView
+        android:id="@+id/textViewDayPressure"
+        android:layout_width="122dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="50dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textViewNightPressure"
+        android:layout_width="122dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="23dp"
+        android:textAlignment="center"
+        android:textColor="@color/ColorTextNight"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="238dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="87dp"
+        android:text="Атмосферное давление"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNightTemperature" />
+
+    <ImageView
+        android:id="@+id/imageViewWeather"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonBackWeatherForecast"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:id="@+id/textViewDayTemperature"
+        android:layout_width="182dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="73dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewWeather" />
+
+    <TextView
+        android:id="@+id/textViewNightTemperature"
+        android:layout_width="140dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/ColorTextNight"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewDayTemperature"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWeatherDescription" />
+
+    <TextView
+        android:id="@+id/textViewWeatherDescription"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewWeather"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDateWeatherForecast" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:text="Прогноз на:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDateWeatherForecast"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="24dp"
+        android:textAlignment="viewEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBackWeatherForecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/colorEmpty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_back" />
+</androidx.constraintlayout.widget.ConstraintLayout>
